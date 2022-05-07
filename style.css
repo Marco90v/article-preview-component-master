@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--LightGrayishBlue);
+    font-size: 13px;
+}
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    width: 330px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+article header picture img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0 0%;
+    border-radius: 10px 10px 0 0;
+}
+section{
+    margin: 2rem 2rem 1rem 2rem;
+}
+section h1{
+    color: var(--VeryDarkGrayishBlue);
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+section p{
+    color: var(--DesaturatedDarkBlue);
+    font-size: .84rem;
+}
+article footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+article footer picture{
+    margin-left: 2rem;
+}
+article footer picture img{
+    width: 40px;
+    border-radius: 100%;
+}
+article footer div{
+    width: 165px;
+}
+.buttomSearch{
+    display: contents;
+    cursor: pointer;
+}
+svg{
+    margin-right: 2rem;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: var(--LightGrayishBlue);
+    transition: all .5s ease-in;
+    z-index: 2;
+}
+.author{
+    display: block;
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: bold;
+}
+.dateTime{
+    color: var(--DesaturatedDarkBlue);
+}
+.search{
+    background-color: var(--VeryDarkGrayishBlue);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: -80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .5s ease-in;
+}
+footer.active .search{
+    bottom: 0px;
+}
+.search span{
+    margin-left: 2rem;
+    color: var(--GrayishBlue);
+    letter-spacing: 5px;
+}
+.searchActive{
+    margin-right: 2rem;
+    padding: 8px;
+    background-color: var(--DesaturatedDarkBlue);
+    border-radius: 100%;
+}
+footer.active svg{
+    background-color: var(--DesaturatedDarkBlue);
+}
+footer.active svg path{
+    fill:var(--LightGrayishBlue);
+}
+.icons img{
+    margin-right: 1rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
