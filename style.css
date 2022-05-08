@@ -123,6 +123,11 @@ footer.active svg path{
     margin-right: 1rem;
     cursor: pointer;
 }
+body > footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
