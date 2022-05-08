@@ -96,9 +96,11 @@ svg{
     align-items: center;
     gap: 10px;
     transition: all .5s ease-in;
+    opacity: 0;
 }
 footer.active .search{
     bottom: 0px;
+    opacity: 1;
 }
 .search span{
     margin-left: 2rem;
@@ -170,7 +172,6 @@ footer.active svg path{
         transform: rotateZ(45deg);
     }
     footer.active .search{
-        opacity: 1;
         bottom: 80px;
     }
 }
