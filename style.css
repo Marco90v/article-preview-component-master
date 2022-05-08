@@ -119,6 +119,7 @@ footer.active svg path{
 }
 .icons img{
     margin-right: 1rem;
+    cursor: pointer;
 }
 .attribution {
     font-size: 11px;
@@ -126,4 +127,50 @@ footer.active svg path{
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+    article{
+        display: grid;
+        grid-template-columns: 43% 57%;
+        grid-template-rows: 50% 25%;
+        width: 700px;
+        height: 300px;
+        overflow: initial;
+    }
+    article header{
+        grid-row: span 3;
+    }
+    article header picture img{
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    article section{
+        grid-row: span 2;
+    }
+    article section h1{
+        font-size: 18px;
+    }
+    .search{
+        width: 250px;
+        border-radius: 10px;
+        height: 50px;
+        bottom: 80px;
+        right: -70px;
+        opacity: 0;
+    }
+    .search::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: var(--VeryDarkGrayishBlue);
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: rotateZ(45deg);
+    }
+    footer.active .search{
+        opacity: 1;
+        bottom: 80px;
+    }
 }
